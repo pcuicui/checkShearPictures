@@ -1,0 +1,96 @@
+body{
+    background-color: #d5d5d5;
+}
+.container{
+    width: 100%;
+    padding: 0 100px;
+}
+.box{
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.box:after{
+    content: "";
+    clear: both;
+}
+.box-1{
+    height: 400px;
+    width: 400px;
+    margin: 0 10px 10px 0;
+    border: 1px solid #333;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.box-1 .img1{
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box-1 .img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.clipbox{
+    border: 1px #fff solid;
+    height:150px;
+    width:150px;
+    position: relative;
+    cursor: move;
+    z-index: 1000;
+}
+.clipbox .point-right-bottom{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    right: -4px;
+    bottom: -4px;
+    cursor: nw-resize;
+    overflow: hidden;
+}
+.box-2{
+    height: auto;
+    width: 150px;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.viewClipImg{
+    height:150px;
+    width:150px;
+    overflow: hidden;
+    border: 1px solid #333;
+    position: absolute;
+    clip:rect(0,150px,150px,0);
+}
+.viewClipImg img{
+    position: absolute;
+}
+.btnDiv{
+    position:relative;
+    width:106px;
+    height:46px;
+    margin-top: 200px;
+}
+input.file{
+    position:absolute;
+    top:0;
+    right:0;
+    height:46px;
+    filter:alpha(opacity:0);
+    opacity: 0;
+    width:106px
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>实时查看剪切的图片</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+	<link href="css/index.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <h3>实时查看剪切的图片</h3>
+        <div class="box">
+            <div class="box-1 pull-left" id="viewImg">
+                <img src="" id="imgSrc1" class="img1" alt="图片"/>
+                <img src="" id="imgSrc2" class="img2" alt="图片"/>
+                <div id="clipbox">
+                    <div class="point-right-bottom" id="right-bottom"></div>
+                </div>
+            </div>
+            <div class="box-2 pull-left" id="wrapClipBtn">
+                <div class="viewClipImg" id="viewClipImg">
+                    <img src="" id="imgSrc3" class="img3" alt="图片"/>
+                </div>
+                <div class="btnDiv" id="btnDiv">
+                    <input type="button" class="btn btn-success btn-lg" value="选取图片"><input type="file" class="file" id="upFile">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/upView.js"></script>
+</body>
+</html>
